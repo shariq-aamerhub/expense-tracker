@@ -35,7 +35,7 @@ export function setAuthCookie(res: NextResponse, token: string): void {
   res.cookies.set(COOKIE_NAME, token, {
     httpOnly: true,
     sameSite: 'strict',
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === 'production' && process.env.SECURE_COOKIE !== 'false',
     path: '/',
     maxAge: COOKIE_MAX_AGE,
   });
