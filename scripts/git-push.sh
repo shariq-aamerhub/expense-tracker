@@ -49,4 +49,3 @@ git push -u origin "$BRANCH"
 
 echo ""
 echo "Successfully pushed to branch: $BRANCH"
-# git push helper
