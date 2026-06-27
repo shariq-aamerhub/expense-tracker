@@ -5,6 +5,7 @@ services:
       - "${PORT:-3050}:3000"
     environment:
       - JWT_SECRET=${JWT_SECRET}
+      - SECURE_COOKIE=false
     volumes:
       - app_data:/app/data
       - app_uploads:/app/uploads
