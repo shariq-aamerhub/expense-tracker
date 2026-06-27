@@ -1,0 +1,10 @@
+.next
+node_modules
+data/expenses.json
+data/months.json
+data/settlements.json
+uploads
+.env*
+*.md
+.git
+.gitignore
